@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  margin: auto;
+  display: grid;
+  display: flexbox;
+  grid-template-rows: 100px repeat(2, 200PX);
+  grid-template-columns: 210px repeat(3, 430px); }
+  .container > * {
+    background-color: white;
+    padding: 10PX;
+    font-size: 30PX;
+    font-family: 'Open Sans', sans-serif; }
+  .container .header {
+    border-style: solid;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    width: 100%;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    background-color: #faf9f9; }
+    .container .header .logo {
+      align-items: center;
+      height: 2rem;
+      margin-left: 2rem;
+      margin-left: -1rem;
+      margin-top: 0.5rem; }
+    .container .header .search {
+      position: relative;
+      flex: 0 0 40%;
+      display: flex;
+      color: #e2dddd;
+      align-items: center;
+      justify-content: center;
+      margin-left: 350px; }
+      .container .header .search__input {
+        font-family: inherit;
+        color: #2e2c2c;
+        font-size: inherit;
+        background-color: #f0eeee;
+        padding: .8rem 2rem;
+        width: 90%;
+        height: 9px;
+        border: none;
+        border-radius: 100px;
+        text-indent: 15px;
+        transition: all .2s;
+        margin-right: -3.5rem;
+        margin-top: -0.5rem; }
+      .container .header .search_focus {
+        width: 100%;
+        outline: none;
+        background-color: #f0eeee;
+        color: white; }
+      .container .header .search_input-placeholder {
+        font-weight: 100;
+        color: silver; }
+      .container .header .search__input:focus + .container .header .search__button {
+        background-color: #f0eeee;
+        color: #e4e6e4; }
+      .container .header .search__button {
+        border: none;
+        background-color: #f4f2f2;
+        transform: translateY(2px); }
+      .container .header .search .fas {
+        position: absolute;
+        color: #7c7777;
+        padding: .1rem 2rem;
+        margin-top: -1rem; }
+    .container .header .user-nav {
+      display: flex;
+      justify-content: space-between;
+      align-self: stretch; }
+      .container .header .user-nav .bookmark {
+        margin-left: 25rem; }
+        .container .header .user-nav .bookmark .fas {
+          height: 4rem;
+          width: 2rem;
+          margin-top: 1.1rem;
+          color: black; }
+        .container .header .user-nav .bookmark .book {
+          position: absolute;
+          color: #8b2121;
+          border-radius: 50%;
+          margin-left: -1.5rem;
+          margin-top: 1rem; }
+      .container .header .user-nav .notify {
+        margin-left: 2rem;
+        margin-top: 1rem; }
+        .container .header .user-nav .notify .fas {
+          height: 3rem;
+          width: 2rem;
+          margin-top: -1rem;
+          color: black; }
+        .container .header .user-nav .notify .noti {
+          position: absolute;
+          color: #8b2121;
+          border-radius: 50%;
+          margin-top: -0.2rem;
+          margin-left: -1rem; }
+      .container .header .user-nav .author {
+        position: absolute;
+        display: flex;
+        margin-left: 34rem;
+        margin-top: -1rem; }
+        .container .header .user-nav .author .pc {
+          height: 3rem;
+          width: 3rem;
+          margin-top: 1rem;
+          margin-left: 1rem;
+          border-radius: 50%; }
+        .container .header .user-nav .author .user-name {
+          font-size: 13px;
+          padding-top: 1rem;
+          margin-left: 0.6rem;
+          margin-top: 1rem;
+          color: black; }
+    .container .header > * {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: 16px;
+      margin-top: -3px;
+      margin-bottom: -35px; }
+  .container .button1 {
+    background-color: #242222;
+    margin-top: 0px;
+    height: 98%;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -24px;
+    padding-top: 40px; }
+    .container .button1 .btn-hot1,
+    .container .button1 .btn-hot2,
+    .container .button1 .btn-hot3,
+    .container .button1 .btn-hot4 {
+      padding: 45px;
+      display: inline-block;
+      font-size: 15px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .container .button1 .editt {
+      font-size: 11px;
+      margin-left: 1rem;
+      margin-top: 55rem;
+      color: white; }
+    .container .button1 .btn-hot1 {
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      height: 20px;
+      margin-left: -10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .15rem;
+      transition: all .8s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1; }
+      .container .button1 .btn-hot1:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2; }
+      .container .button1 .btn-hot1:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #bb1242;
+        transition: all .8s;
+        z-index: -1; }
+      .container .button1 .btn-hot1:hover {
+        color: #fff;
+        height: 20px;
+        width: 89.2%; }
+        .container .button1 .btn-hot1:hover:before {
+          width: 100%; }
+    .container .button1 .btn-hot2 {
+      background-color: #bb1242;
+      margin-left: -10px;
+      width: 89.2%;
+      height: 20px;
+      position: absolute;
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      margin-left: -10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .15rem;
+      transition: all .8s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1; }
+      .container .button1 .btn-hot2:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .container .button1 .btn-hot2:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background-color: #bb1242;
+        transition: all .8s;
+        z-index: -1; }
+      .container .button1 .btn-hot2:hover {
+        color: #fff;
+        height: 20px;
+        width: 89.2%; }
+        .container .button1 .btn-hot2:hover:before {
+          width: 70%; }
+    .container .button1 .btn-hot3 {
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      margin-left: -10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .15rem;
+      transition: all .8s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      height: 20px; }
+      .container .button1 .btn-hot3:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2; }
+      .container .button1 .btn-hot3:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #bb1242;
+        transition: all .8s;
+        z-index: -1; }
+      .container .button1 .btn-hot3:hover {
+        color: #fff;
+        height: 20px;
+        width: 89.2%; }
+        .container .button1 .btn-hot3:hover:before {
+          width: 100%; }
+    .container .button1 .btn-hot4 {
+      display: inline-block;
+      padding: .75rem 1.25rem;
+      height: 20px;
+      margin-left: -10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: .15rem;
+      transition: all .8s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1; }
+      .container .button1 .btn-hot4:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2; }
+      .container .button1 .btn-hot4:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #bb1242;
+        transition: all .8s;
+        z-index: -1; }
+      .container .button1 .btn-hot4:hover {
+        color: #fff;
+        height: 20px;
+        width: 89.2%; }
+        .container .button1 .btn-hot4:hover:before {
+          width: 100%; }
+  .container .w3-content {
+    padding: 0px;
+    padding-top: -10px; }
+    .container .w3-content .mySlides {
+      display: none; }
+  .container .name {
+    margin-top: 510px;
+    margin-left: 550px;
+    position: absolute; }
+  .container .main {
+    background-color: skyblue;
+    display: grid;
+    height: 800px;
+    width: 1300px;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding-top: 50px;
+    margin-top: -80px; }

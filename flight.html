@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/flight.css">
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+        <div class="container">
+        <div class="header"><div class="logo"><img src="logo.png" alt="logo" height="35px" width="45px">
+            <form action="#" class="search">
+                <input type='text' class='search__input' placeholder="Search hotels">
+                <button class='search__button'>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+           
+            <div class="user-nav"> 
+                <div class="bookmark">    
+                    <i class="fas fa-bookmark"></i>  <img src="book.png" class="book" width="12" height="12">
+                </div>        
+                <div class="notify">
+                    <i class="fas fa-comments"></i><img src="noti.png" class="noti" width="12" height="12">
+                </div>
+                <div class="author">
+                 <img src="imgs/photo.jpg" alt="User photo" class="pc">
+                 <span class="user-name">Sass</span>
+                </div>
+                </div>
+        
+            </div>
+        </div>       
+   
+
+    <div class="button1">    
+        <a class="btn-hot1" href="index.html"><i class="fas fa-home"></i> HOTEL</a>
+        <a class="btn-hot2" href="flight.html"><i class="fas fa-plane-departure"></i> flight</a>
+        
+        <a class="btn-hot3" href="#"><i class="fas fa-key"></i> carrental</a>
+        <a class="btn-hot4" href="#"><i class="fas fa-map"></i> tours</a>
+        <div class="editt">@ 2017 by trillo.All rights<br>
+        reserved</div>
+    </div>
+    <div class="w3-content w3-section">
+        <img class="mySlides" src="flight1.jpg" width="1300" height="400">
+        <img class="mySlides" src="flight2.png" width="1300" height="400">
+        <img class="mySlides" src="flight3.jpg" width="1300" height="400">
+      </div>
+      <div class="name">START YOUR JOURNY WITH US</div>
+    <div class="main"></div>
+    
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>       
+          
+        
+        
+        
+    </div>
+</body>
+</html>
