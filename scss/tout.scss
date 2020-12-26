@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+header{
+    //width: 100%;
+    //height: 100%;
+    background-image: url(../imgs/tour7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    width: 100%;
+    height: 10vh;
+   background-color: rgb(63, 62, 62);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+nav .menu a{
+    text-decoration: none;
+    color: #20cbd1;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: rgb(11, 12, 10);
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    color: goldenrod;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    justify-content: initial;
+    margin-left: 5rem;
+}
+section .btnone{
+    background: white;
+    color: #000;
+    margin-left: 8rem;
+}
+section .btntwo{
+    background: #00b894;
+    color: white;
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext{
+    0%{content: "Darjeeling";}
+    20%{content: "Darjeeling";}
+    35%{content: "Agra";}
+    60%{content: "Jaypur";}
+    80%{content: "Delhi";}
+    100%{content: "Keral";}
+}
+.section-search input{
+    padding: 5px !important;
+    font-size: 18px;
+    width: 90%;
+    border: white 5px solid;
+    
+
+}
+.contain{
+    background-color: rgb(134, 235, 248);
+    width: 200vh;
+    margin-top: -0.5rem;
+   box-sizing: border-box;
+   border-radius: 50%;
+}
+.row{
+    position: absolute;
+    padding: 8px;
+    background-color: rgb(179, 225, 243);
+    width: 100%;
+    height: 100px;
+    font-size: 22px;
+    color: rgb(19, 13, 13);
+    margin-left: 0rem;
+    align-items: center;
+}
+.contain h4{
+    text-align: center;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.input-field{
+    color: black;
+  
+    box-sizing: content-box;
+    position: absolute;
+   margin-left: 27rem;
+   width: 45rem;
+   border-color: white;
+}
+.container2{
+    background-color: rgb(255, 255, 255); 
+    padding: 1rem;
+}
+.container2 h2{
+    text-align: center;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 150px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.container2 h2::after{
+    content: '';
+    background: #ff9800;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.container2 p{
+    text-align: center;
+    font-weight: bold;
+    color: #070606;
+    align-items: center;
+    padding: -5px auto;
+   // padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.text{
+    position: absolute;
+    margin-top: 7rem;
+    margin-left: 40rem;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.main1{
+     height: 350px;
+     width: 250px;
+     background-color: rgb(162, 221, 43);
+     margin-top: 80px;
+     margin-left: 190px;
+     border-radius: 5%;
+     background-image: url('../imgs/jaypur.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .main2{
+   // display: inline;
+   border-radius: 5%;
+  height: 350px;
+  width: 250px;
+    border-radius: 5%;
+    background-color: rgb(218, 186, 31);
+    margin-top: -21.7rem;
+    margin-left: 30rem;
+    background-image: url('../imgs/taj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+       }
+.main3{
+   // display: inline;
+   border-radius: 5%;
+   background-image: url('../imgs/jalghar.jpg');
+   background-repeat: no-repeat;
+ background-size: cover;
+ 
+  height: 350px;
+  width: 250px;
+    background-color: rgb(194, 114, 24);
+    margin-top: -21.7rem;
+   margin-left: 48rem;
+}
+.main4{
+    background-color: palevioletred;
+    border-radius: 5%;
+    background-image: url('../imgs/gate.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  height: 350px;
+  width: 250px;
+    //background-color: rgb(194, 114, 24);
+    margin-top: -21.9rem;
+   margin-left: 66rem;
+}
+.main5{
+    height: 350px;
+    width: 250px;
+    background-color: rgb(162, 221, 43);
+    margin-top: 2rem;
+    margin-left: 190px;
+    border-radius: 5%;
+    background-image: url('../imgs/saaa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main6{
+  // display: inline;
+  border-radius: 5%;
+ height: 350px;
+ width: 250px;
+   border-radius: 5%;
+   background-color: rgb(218, 186, 31);
+   margin-top: -21.7rem;
+   margin-left: 30rem;
+   background-image: url('../imgs/saaa1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+      }
+.main7{
+  // display: inline;
+  border-radius: 5%;
+  background-image: url('../imgs/saaa2.jpg');
+  background-repeat: no-repeat;
+background-size: cover;
+
+ height: 350px;
+ width: 250px;
+   background-color: rgb(194, 114, 24);
+   margin-top: -21.7rem;
+  margin-left: 48rem;
+}
+.main8{
+    background-color: palevioletred;
+    border-radius: 5%;
+    background-image: url('../imgs/saaa3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  height: 350px;
+  width: 250px;
+    //background-color: rgb(194, 114, 24);
+    margin-top: -21.7rem;
+  margin-left: 66rem;
+}
+.textmoni{
+    margin: 50px auto;
+   //justify-content: space-evenly;
+   // display: inline;
+   // justify-items: auto;
+
+}
+.textmoni h2{
+    text-align: center;
+    font-weight: bold;
+    color: #ff9800;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.textmoni h2::after{
+    content: '';
+    background: #ff9800;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.container{
+    font-weight: 400;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+   // display: inline-block;
+}
+.container p{
+    text-align: center;
+    font-weight: bold;
+    color: #070606;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.visit1{
+    margin-top: 70px;
+    margin-left: 155px;
+    align-items: center;
+    display: inline-block;
+    width: 300px;
+    height: 50vh;
+    padding: 30px 10px 10px 0;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.profile{
+    padding: 70px 10px 10px;
+    background-color: #faf9f9;
+    align-items: center;
+    border-radius: 4px;
+}
+.profile:hover{
+    background-color: rgb(179, 225, 243);
+    color: black;
+   // box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.profile img{
+   top: 1991px;
+   // top: 150px;
+   //left: 90px;
+    position: absolute;
+    left: calc(50% -50vh);
+    border: 10px solid rgb(236, 190, 209);    
+    margin-left: 80px;
+}
+.profile img:hover{
+    border: 10px solid rgb(179, 225, 243);
+}
+.image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.visit1 h4{
+    text-align: center;
+    align-items: center;
+}
+.visit1 p{
+    font-size: 16px;
+    line-height: 30px;
+
+}
+.visit1 p ::before{
+    content: '\93';
+    font-size: 50px;
+    position: relative;
+    color: #ff9800;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+.footer{
+    background-color: #272727;
+    padding: 20px 0;
+    //padding: 10px;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    //margin-bottom: 2px;
+}
+.social-icon{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.social-icon ul{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    //padding: 10px 10px 10px 10px;
+    //position: absolute;
+    display: inline;
+    margin-left: 40rem;
+}
+.social-icon ul li{
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: rgb(164, 222, 245);
+    align-content: center;
+}
+.social-icon ul li a{
+    position: absolute;
+    align-items: center;
+    color: #272727;
+    font-size: 25px;
+    margin-left: 6px;
+    display: block;
+}
+.social-icon ul li a i{
+    line-height: 50px;
+}
+.menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.menu ul li a{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.menu1 ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.menu1 ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.menu1 ul li a{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+   // background: rgb(164, 222, 245);
+    padding: 10px;
+    margin-top: 25px;
+}
+.bottom p{
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.bottom p a{
+    color: #fff;
+}
